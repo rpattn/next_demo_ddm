@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
     console.log(resourcePath)
 
     if(resourcePath) {
-        const filePath = path.join(__dirname, '../../../../../_next/server/data', resourcePath)
+        const filePath = path.join(__dirname, '../../../../../.next/server/data', resourcePath)
         console.log("CUrrent dir: ", __dirname)
         console.log("Reading: ", filePath)
         const buffer = fs.readFileSync(filePath)
