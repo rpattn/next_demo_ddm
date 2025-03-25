@@ -12,6 +12,7 @@ export async function GET(request: NextRequest) {
 
     if(resourcePath) {
         const filePath = path.join(__dirname, '../../../../../data', resourcePath)
+        console.log(__dirname)
         console.log("Reading: ", filePath)
         const buffer = fs.readFileSync(filePath)
         //console.log(buffer.toString())
