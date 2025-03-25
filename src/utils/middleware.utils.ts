@@ -11,3 +11,7 @@ export function redirectToSignIn(nextUrl: URL) {
 export function redirectToWelcome(nextUrl: URL) {
   return NextResponse.redirect(new URL('/', nextUrl.origin));
 }
+
+export function redirectToDemo(nextUrl: URL) {
+  return NextResponse.redirect(new URL('/demo', nextUrl.origin));
+}
